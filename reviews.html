@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/reviews.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave a Review</title>
+</head>
+
+<body>
+
+<!--  Menu -->
+
+    <div id="main">
+      <a href="#"><img src="images/Logo/Designer-removebg-preview.png" alt="logo" class="navbarLogo" onclick="openNav()"></a>
+      </div>
+    
+      <div id="mySidenav" class="sidenav">
+        <a class="closebtn" onclick="closeNav()">&times;</a>                 <!-- //&times; is used to create the close icon in the menu so it can be multiple times-->
+        <a href="index.html">Home</a>
+        <a href="items.html">Items</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="reviews.html">Reviews</a>
+      </div>
+      
+
+
+<!-- Page Introduction -->
+
+<h1>Give Us Your Feedback !</h1>
+<h3>Thank you for choosing GRAINMART. <br>
+    Your feedback is important to us as we strive to improve our products and services. <br>
+    Please take a moment to complete this form.
+</h3>
+<hr />
+
+
+
+<!-- Form to lead to the thnkyou page -->
+
+<form action="Thanks.html" id="form" class="form" >
+
+
+
+ <!--CUSTOMER DETAILS SECTION-->
+
+<h2>Customer Details</h2>                                           
+
+<label for="firstName"> First Name :</label>
+<input type="text" id="firstName" name="FName" pattern="^[A-Za-z]{1,15}$" autofocus required />
+<br />
+<br />
+
+<label for="secondName"> Second Name :</label>
+<input type="text" id="secondName" name="FName" pattern="^[A-Za-z]{1,15}$" autofocus required />
+<br />
+<br />
+
+
+
+<label for="email-input">Email :</label>
+<input
+type="text"
+id="email-input"
+name="Email"
+placeholder="example@example.com" required/>
+<br />
+<br />
+
+<label for="phNumber-input">Phone Number :</label>
+<input
+type="text"
+id="phNumber-input"
+name="PhoneNumber"
+placeholder="(XXX) XXX-XXXX" required pattern="\(\d\d\d\) \d\d\d-?\d\d\d\d"/>
+<br />
+<br />
+
+
+<label for="suburb-input">Suburb/Town :</label>
+<input type="text" id="suburb-input" name="Suburb" required pattern="^[A-Za-z]{1,15}$" />  
+<br />
+<br />
+
+
+<!--PRODUCT INFORMATION SECTION-->
+
+<h2>Product Information</h2>
+
+<h4>Product Purchased</h4>
+<textarea name="Product"></textarea>
+
+<h4>Quantity Purchased</h4>
+<textarea name="Quantity"></textarea>
+
+<h4>Was the product delivered on time ?</h4>
+<input
+type="radio"
+id="info-1"
+name="to"
+value="info-1"
+class="one"
+checked
+/>
+<label for="info-1">Yes</label>
+
+<input
+type="radio"
+id="info-2"
+name="to"
+value="info-2"
+class="one"
+checked
+/>
+<label for="info-1">No</label>
+
+<h4>Rate the quality of the product: </h4>
+<input
+type="radio"
+id="poor"
+name="to2"
+value="poor"
+checked
+/>
+<label for="poor">Poor</label>
+<input
+type="radio"
+id="fair"
+name="to2"
+value="fair"
+/>
+<label for="fair">Fair</label>
+<input
+type="radio"
+id="good"
+name="to2"
+value="good"
+/>
+<label for="good">Good</label>
+<input
+type="radio"
+id="excellent"
+name="to2"
+value="excellent"
+/>
+<label for="excellent">Excellent</label>
+
+<h4>Were the products as described on our website ?</h4>
+<input
+type="radio"
+id="yes"
+name="to7"
+value="yes"
+checked
+/>
+<label for="yes">Yes</label>
+
+<input
+type="radio"
+id="no"
+name="to7"
+value="no"
+checked
+/>
+<label for="no">No</label>
+<br>
+<br>
+
+ <!--SERVICE INFROMATION SECTION-->
+<h2>Service Infromation</h2>
+
+<h4>Rate the quality of the product: </h4>
+<input
+type="radio"
+id="poor-2"
+name="to9"
+value="poor-2"
+checked
+/>
+<label for="poor-2">Poor</label>
+<input
+type="radio"
+id="fair-2"
+name="to9"
+value="fair-2"
+/>
+<label for="fair-2">Fair</label>
+<input
+type="radio"
+id="good-2"
+name="to9"
+value="good-2"
+/>
+<label for="good-2">Good</label>
+<input
+type="radio"
+id="excellent-2"
+name="to9"
+value="excellent-2"
+/>
+<label for="excellent-2">Excellent</label>
+
+<h4>1. Rate the the communication with the customer service team: </h4>
+<input
+type="radio"
+id="poor-3"
+name="to13"
+value="poor-3"
+checked
+/>
+<label for="poor-3">Poor</label>
+
+<input
+type="radio"
+id="fair-3"
+name="to13"
+value="fair-3"
+/>
+<label for="fair-3">Fair</label>
+
+<input
+type="radio"
+id="good-3"
+name="to13"
+value="good-3"
+/>
+<label for="good-3">Good</label>
+
+<input
+type="radio"
+id="excellent-3"
+name="to13"
+value="excellent-3"
+/>
+<label for="excellent-3">Excellent</label>
+
+<h4>2. Were your inquiries addressed properly ?</h4>
+<input
+type="radio"
+id="yes-2"
+name="to17"
+value="yes-2"
+checked
+/>
+<label for="yes-2">Yes</label>
+
+<input
+type="radio"
+id="no-2"
+name="to17"
+value="no-2"
+checked
+/>
+<label for="no-2">No</label>
+
+<h4>3. Overall, how satisfied are you with our service ?: </h4>
+<input
+type="radio"
+id="vd"
+name="to19"
+value="vd"
+checked
+/>
+<label for="vd">Very Dissatisfied</label>
+
+<input
+type="radio"
+id="d"
+name="to19"
+value="d"
+/>
+<label for="d">Dissatisfied</label>
+
+<input
+type="radio"
+id="n"
+name="to19"
+value="n"
+/>
+<label for="n">Neutral</label>
+
+<input
+type="radio"
+id="s"
+name="to19"
+value="s"
+/>
+<label for="s">Satisfied</label>
+
+<input
+type="radio"
+id="vs"
+name="to19"
+value="vs"
+/>
+<label for="vs">Very Satisfied</label>
+<br>
+<br>
+
+ <!--GENERAL FEEDBACK SECTION-->
+
+<h2>General Feedback</h2>
+
+<h4><h4>What did you like most about our products or services?</h4>
+<textarea name="Comments"></textarea></h4>
+
+<h4>1. What aspects of our products or services do you think need improvement?</h4>
+<textarea name="Comments"></textarea>
+
+<h4>2. Do you have any suggestions for new products or services we could offer?</h4>
+<textarea name="Comments"></textarea>
+
+<h4>2. Would you reccomend us to others</h4>
+<input
+type="radio"
+id="yes-3"
+name="PoolType"
+value="yes-3"
+checked
+/>
+<label for="yes-3">Yes</label>
+
+<input
+type="radio"
+id="no-3"
+name="PoolType"
+value="no-3"
+checked
+/>
+<label for="no-3">No</label>
+
+<input
+type="radio"
+id="maybe"
+name="PoolType"
+value="maybe"
+checked
+/>
+<label for="maybe">May be</label>
+<br>
+<br>
+
+
+<h2>Additional Information</h2>
+<textarea name="Comments"></textarea>
+
+
+<button class="btn" type="reset">Reset</button> 
+<button class="btn" type="submit">Submit</button>
+
+
+</form>
+
+<p class="acc-text">Already have an account? <a href="#" target="_blank">Log in</a></p>
+
+<!-- Footer -->
+<footer>
+  
+  <div class="footer">
+    
+      <div class="row">
+        <a href="#"><img src="images/footer/instagram.svg" alt="image"></a>
+        <a href="#"><img src="images/footer/snapchat.svg" alt="image"></a>
+        <a href="#"><img src="images/footer/linkedin.svg" alt="image"></a>
+        <a href="#"><img src="images/footer/twitter.svg" alt="image"></a>
+      </div>
+      
+      <div class="row">
+          <ul>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Careers</a></li>
+          </ul>
+      </div>
+      
+      <!-- Script for JS menu -->
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "#FDF7E4";
+    }
+    </script>
+
+  
+      <div class="row">
+      GRAINMART Copyright © 2014 - All rights reserved || Designed By: Gurneesh Anand 
+      </div>
+  </div>
+  
+</footer>
+ 
+
+</body>
+</html>
